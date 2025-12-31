@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" id="name">
+        </div>
+
+        <div class="row">
+            <label>Date of Birth</label>
+            <input type="date" id="dob">
+        </div>
+
+        <div class="row">
+            <label>Email Address</label>
+            <input type="text" id="email">
+        </div>
+
+        <div class="row">
+            <label>Phone Number</label>
+            <input type="text" id="phone">
+        </div>
+
+        <div class="row">
+            <label>Course / Program</label>
+            <select id="course">
+                <option value="">Select course</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Business Studies</option>
+                <option>Engineering</option>
+            </select>
+        </div>
+
+        <p id="error"></p>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

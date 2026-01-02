@@ -1,74 +1,85 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #eef2f7;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  font-family: Georgia, 'Times New Roman';
+  background-color: #86bef5; 
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.container {
-    background-color: white;
-    width: 360px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.company-title {
+  font-family: "Georgia", serif;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #1f3a5f;
+  letter-spacing: 1px;
 }
 
-h2 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
 
 form {
-    display: flex;
-    flex-direction: column;
+  background-color: #ffffff;
+  width: 700px;
+  height:550px;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 12px;
+form h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
 }
 
-label {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
 
 input, select {
-    padding: 9px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 340px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 input:focus, select:focus {
-    outline: none;
-    border-color: #4a6cff;
+  outline: none;
+  border-color: #1f3a5f;
 }
 
+
 button {
-    margin-top: 10px;
-    padding: 11px;
-    background-color: #4a6cff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #1f3a5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #3a57d6;
+  background-color: #162c46;
 }
 
+
 #error {
-    color: red;
-    font-size: 13px;
-    text-align: center;
-    margin-top: 5px;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#emailMsg{
+color: red;
+  font-size: 16px;
+  margin-top: 5px;
+
+}
+
+h3{
+    font-size: 20px;
+    color: #35363d;
+
 }

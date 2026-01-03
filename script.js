@@ -20,3 +20,33 @@ function validateForm() {
     alert("Registration successful!");
     return true;
 }
+
+function showField() {
+  document.getElementById("extraField").innerHTML =
+    '<input type="text" placeholder="Extra information">';
+}
+
+function checkEmail() {
+  let email = document.getElementById("email").value;
+
+  if (email == "") {
+    document.getElementById("emailMsg").innerText = "Email is required";
+  } else {
+    document.getElementById("emailMsg").innerText = "";
+  }
+}
+
+
+document.getElementById("registrationForm").onsubmit = function () {
+  var email = document.getElementById("email").value;
+
+  localStorage.setItem("email", email);
+
+  document.getElementById("emailList").innerHTML =
+    "<li>" + email + "</li>";
+
+  alert("Form submitted!");
+
+  return false;
+};
+

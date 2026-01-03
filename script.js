@@ -36,3 +36,17 @@ function checkEmail() {
   }
 }
 
+
+document.getElementById("registrationForm").onsubmit = function () {
+  var email = document.getElementById("email").value;
+
+  localStorage.setItem("email", email);
+
+  document.getElementById("emailList").innerHTML =
+    "<li>" + email + "</li>";
+
+  alert("Form submitted!");
+
+  return false;
+};
+
